@@ -24,6 +24,7 @@
 	// PLAY A SOUND DEFINED IN DESCRIPTION
 	//playSound "ANTHEM";		
 	[] spawn {
+				disableUserInput true;
 				// SWITCH TO 3RD PERSON
 				player switchCamera "External";
 				// FORCE PLAYER TO HOLSTER WEAPON IF IT DOES NOT WORK WITH SALUTE ANIMATION
@@ -67,5 +68,6 @@
 				_CAM camCommit 2;
 				uisleep 2; 
 				camDestroy _CAM;
+				disableUserInput false;
 		};
 
